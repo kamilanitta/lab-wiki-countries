@@ -1,7 +1,13 @@
 .App {
-  text-align: center;
+}
+.countryBox {
+  height: 8vh;
 }
 
+.tableInfo {
+  width: 30%;
+  height: auto;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

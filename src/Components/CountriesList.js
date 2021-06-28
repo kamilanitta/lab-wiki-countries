@@ -12,12 +12,12 @@ class CountriesList extends React.Component {
         <div className="column">
           {this.state.countries.map((countries) => {
             return (
-              <div
-                className="col-5"
-                style={{ maxHeight: '90vh', overflow: 'scroll' }}
-              >
-                <div className="list-group">
-                  <Link to={`/countries/${countries.cca3}`} className="btn">
+              <div className="col-4" key={countries.cca3}>
+                <div className="listGroup">
+                  <Link
+                    to={`/countries/${countries.cca3}`}
+                    className="list-group-item list-group-item-action countryBox"
+                  >
                     {countries.flag} {countries.name.common}
                   </Link>
                 </div>
